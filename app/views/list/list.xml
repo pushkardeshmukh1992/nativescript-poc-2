@@ -8,5 +8,7 @@
                 <Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center"/>
             </ListView.itemTemplate>
         </ListView>
+
+        <ActivityIndicator busy="{{ isLoading }}" rowSpan="2" colSpan="2" />
     </GridLayout>
 </Page>
