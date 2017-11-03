@@ -5,7 +5,33 @@ var ObservableArray = require("data/observable-array").ObservableArray;
 function GroceryListViewModel(items) {
     var viewModel = new ObservableArray(items);
 
+    viewModel.load = function () {
+        console.log('Loading items');
+        console.log(config.apiUrl)
+        console.log(config.token)
+        return fetch(config.apiUrl + "Groceries", {
+            headers: {
+                "Authorization": "Bearer " + config.token
+            }
+        })
+            .then(handleErrors)
+            .then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                data.Result.forEach(function (grocery) {
+                    viewModel.push({
+                        name: grocery.Name,
+                        id: grocery.Id
+                    });
+                });
+            });
+    };
 
+    viewModel.empty = function () {
+        while (viewModel.length) {
+            viewModel.pop();
+        }
+    };
 
     return viewModel;
 }
