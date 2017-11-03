@@ -33,6 +33,26 @@ function GroceryListViewModel(items) {
         }
     };
 
+    viewModel.add = function (grocery) {
+        return fetch(config.apiUrl + "Groceries", {
+            method: "POST",
+            body: JSON.stringify({
+                Name: grocery
+            }),
+            headers: {
+                "Authorization": "Bearer " + config.token,
+                "Content-Type": "application/json"
+            }
+        })
+            .then(handleErrors)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                viewModel.push({ name: grocery, id: data.Result.Id });
+            });
+    };
+
     return viewModel;
 }
 
