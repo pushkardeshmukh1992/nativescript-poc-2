@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Nov 03 16:38:02 IST 2017
+#Fri Nov 03 19:04:02 IST 2017
 100.set=ASSET
 57.file=/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/build/intermediates/assets/F0/debug/app/tns_modules/tns-core-modules/ui/date-picker/package.json
 145.file=/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/build/intermediates/res/resources-F0-debug.ap_/res/anim/design_snackbar_out.xml

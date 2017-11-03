@@ -3,8 +3,8 @@ var UserViewModel = require("../../shared/view-models/user-view-model");
 var dialogsModule = require("ui/dialogs");
 
 var user = new UserViewModel({
-    email: "username@domain.com",
-    password: "password"
+    email: "testing@gmail.comm",
+    password: "test"
 });
 var page;
 var email;
