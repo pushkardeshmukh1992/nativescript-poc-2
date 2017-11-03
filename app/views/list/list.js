@@ -13,14 +13,17 @@ var pageData = new observableModule.fromObject({
 
 exports.loaded = function (args) {
     page = args.object;
+    var listView = page.getViewById("groceryList");
     page.bindingContext = pageData;
 
     groceryList.empty();
-    
-
     pageData.set("isLoading", true);
     groceryList.load().then(function () {
         pageData.set("isLoading", false);
+        listView.animate({
+            opacity: 1,
+            duration: 1000
+        });
     });
 };
 
