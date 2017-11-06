@@ -9,7 +9,8 @@ function User(info) {
     // You can add properties to observables on creation
     var viewModel = new observableModule.fromObject({
         email: info.email || "",
-        password: info.password || ""
+        password: info.password || "",
+        isEnabledFirebaseFlag: info.isEnabledFirebaseFlag || ""
     });
 
     viewModel.login = function () {

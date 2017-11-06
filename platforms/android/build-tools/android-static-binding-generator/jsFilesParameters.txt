@@ -6,6 +6,13 @@
 /home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/shared/utils/ios-swipe-delete.js
 /home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/shared/view-models/grocery-list-view-model.js
 /home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/shared/view-models/user-view-model.js
+/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/firebase.js
+/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/postinstall-hooks.js
+/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/firebase-common.js
+/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/preuninstall-hooks.js
+/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/scripts/postinstall.js
+/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/scripts/entitlements-after-prepare.js
+/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/scripts/entitlements-before-prepare.js
 /home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/tns-core-modules/bundle-entry-points.js
 /home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/tns-core-modules/connectivity/connectivity.js
 /home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/src/main/assets/app/tns_modules/tns-core-modules/css-value/index.js

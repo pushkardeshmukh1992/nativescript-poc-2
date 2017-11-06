@@ -1,6 +1,26 @@
 {
     "email-validator": true,
+    "nativescript-plugin-firebase": true,
     "nativescript-theme-core": true,
     "tns-core-modules": true,
-    "tns-core-modules-widgets": true
+    "nativescript-hook": true,
+    "prompt-lite": true,
+    "tns-core-modules-widgets": true,
+    "glob": true,
+    "mkdirp": true,
+    "async": true,
+    "colors": true,
+    "read": true,
+    "revalidator": true,
+    "inflight": true,
+    "inherits": true,
+    "minimatch": true,
+    "once": true,
+    "path-is-absolute": true,
+    "minimist": true,
+    "mute-stream": true,
+    "wrappy": true,
+    "brace-expansion": true,
+    "balanced-match": true,
+    "concat-map": true
 }

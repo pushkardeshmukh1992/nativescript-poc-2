@@ -1,5 +1,9 @@
 [
     {
+        "name": "nativescript-plugin-firebase",
+        "directory": "../../node_modules/nativescript-plugin-firebase"
+    },
+    {
         "name": "nativescript-theme-core",
         "directory": "../../node_modules/nativescript-theme-core"
     },
