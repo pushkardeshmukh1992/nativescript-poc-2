@@ -53,6 +53,20 @@ function GroceryListViewModel(items) {
             });
     };
 
+    viewModel.delete = function (index) {
+        return fetch(config.apiUrl + "Groceries/" + viewModel.getItem(index).id, {
+            method: "DELETE",
+            headers: {
+                "Authorization": "Bearer " + config.token,
+                "Content-Type": "application/json"
+            }
+        })
+            .then(handleErrors)
+            .then(function () {
+                viewModel.splice(index, 1);
+            });
+    };
+
     return viewModel;
 }
 

@@ -13,7 +13,10 @@
 
         <ListView items="{{ groceryList }}" id="groceryList" row="1" colSpan="2">
             <ListView.itemTemplate>
-                <Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center"/>
+                <GridLayout columns="*, auto">
+                    <Label text="{{ name }}"/>
+                    <Image src="res://ic_menu_delete" ios:visibility="collapsed" col="1" tap="delete" />
+                </GridLayout>
             </ListView.itemTemplate>
         </ListView>
 

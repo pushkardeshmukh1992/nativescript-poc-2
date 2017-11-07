@@ -60,3 +60,13 @@ exports.share = function () {
     var listString = list.join(", ").trim();
     socialShare.shareText(listString);
 };
+
+exports.delete = function (args) {
+    console.log('in delete method');
+    var item = args.view.bindingContext;
+    var index = groceryList.indexOf(item);
+    pageData.set("isLoading", true);
+    groceryList.delete(index).then(function () {
+        pageData.set("isLoading", false);
+    });
+};
