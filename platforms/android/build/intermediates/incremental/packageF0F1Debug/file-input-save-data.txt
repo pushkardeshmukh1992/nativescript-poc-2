@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 06 18:34:51 IST 2017
+#Mon Nov 06 18:59:38 IST 2017
 1073.file=/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/build/intermediates/res/resources-F0-F1-debug.ap_/res/drawable/common_google_signin_btn_icon_light_focused.xml
 1090.base=/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/build/intermediates/res/resources-F0-F1-debug.ap_
 1007.base=/home/cp_user/Documents/hackathon/native-script-javascript-1/Groceries/platforms/android/build/intermediates/res/resources-F0-F1-debug.ap_
