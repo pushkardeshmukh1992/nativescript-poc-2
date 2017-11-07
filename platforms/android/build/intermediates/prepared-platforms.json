@@ -1,6 +1,7 @@
 {
     "email-validator": true,
     "nativescript-plugin-firebase": true,
+    "nativescript-social-share": true,
     "nativescript-theme-core": true,
     "tns-core-modules": true,
     "nativescript-hook": true,

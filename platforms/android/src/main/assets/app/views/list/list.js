@@ -11,6 +11,8 @@ var pageData = new observableModule.fromObject({
     grocery: ""
 });
 
+var socialShare = require("nativescript-social-share");
+
 exports.loaded = function (args) {
     page = args.object;
     var listView = page.getViewById("groceryList");
@@ -48,4 +50,13 @@ exports.add = function () {
 
     // Empty the input field
     pageData.set("grocery", "");
+};
+
+exports.share = function () {
+    var list = [];
+    for (var i = 0, size = groceryList.length; i < size; i++) {
+        list.push(groceryList.getItem(i).name);
+    }
+    var listString = list.join(", ").trim();
+    socialShare.shareText(listString);
 };
