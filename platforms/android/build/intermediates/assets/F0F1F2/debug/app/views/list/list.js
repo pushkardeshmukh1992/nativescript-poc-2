@@ -1,5 +1,6 @@
 var dialogsModule = require("ui/dialogs");
 var GroceryListViewModel = require("../../shared/view-models/grocery-list-view-model");
+var swipeDelete = require("../../shared/utils/ios-swipe-delete");
 
 var observableModule = require("data/observable")
 var ObservableArray = require("data/observable-array").ObservableArray;
@@ -11,8 +12,18 @@ var pageData = new observableModule.fromObject({
     grocery: ""
 });
 
+var socialShare = require("nativescript-social-share");
+
 exports.loaded = function (args) {
     page = args.object;
+
+    if (page.ios) {
+        var listView = page.getViewById("groceryList");
+        swipeDelete.enable(listView, function (index) {
+            groceryList.delete(index);
+        });
+    }
+    
     var listView = page.getViewById("groceryList");
     page.bindingContext = pageData;
 
@@ -48,4 +59,23 @@ exports.add = function () {
 
     // Empty the input field
     pageData.set("grocery", "");
+};
+
+exports.share = function () {
+    var list = [];
+    for (var i = 0, size = groceryList.length; i < size; i++) {
+        list.push(groceryList.getItem(i).name);
+    }
+    var listString = list.join(", ").trim();
+    socialShare.shareText(listString);
+};
+
+exports.delete = function (args) {
+    console.log('in delete method');
+    var item = args.view.bindingContext;
+    var index = groceryList.indexOf(item);
+    pageData.set("isLoading", true);
+    groceryList.delete(index).then(function () {
+        pageData.set("isLoading", false);
+    });
 };

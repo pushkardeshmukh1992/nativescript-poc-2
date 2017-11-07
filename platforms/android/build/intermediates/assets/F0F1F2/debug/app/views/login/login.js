@@ -14,6 +14,14 @@ var email;
 
 exports.loaded = function (args) {
     page = args.object;
+
+    console.log(page.ios);
+    if (page.ios) {
+        console.dir(page);
+        var navigationBar = frameModule.topmost().ios.controller.navigationBar;
+        navigationBar.barStyle = UIBarStyle.UIBarStyleBlack;
+    }
+
     page.bindingContext = user;
 
     firebase.getRemoteConfig({
