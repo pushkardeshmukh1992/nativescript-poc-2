@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">nativescriptpoc2</string>
     <string name="title_activity_kimera">nativescriptpoc2</string>
+    <string name="facebook_app_id">203371610205500</string>
 </resources>
