@@ -1,6 +1,7 @@
 var dialogsModule = require("ui/dialogs");
 var GroceryListViewModel = require("../../shared/view-models/grocery-list-view-model");
 var swipeDelete = require("../../shared/utils/ios-swipe-delete");
+var firebase = require("nativescript-plugin-firebase");
 
 var observableModule = require("data/observable")
 var ObservableArray = require("data/observable-array").ObservableArray;
@@ -23,6 +24,9 @@ exports.loaded = function (args) {
             groceryList.delete(index);
         });
     }
+
+    console.log('Setting to list name');
+    firebase.analytics.setScreenName({ "screenName": "List Screen" })
     
     var listView = page.getViewById("groceryList");
     page.bindingContext = pageData;

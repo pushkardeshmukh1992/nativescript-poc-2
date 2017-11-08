@@ -24,6 +24,9 @@ exports.loaded = function (args) {
 
     page.bindingContext = user;
 
+    console.log('Setting to Login Screen');
+    firebase.analytics.setScreenName({ "screenName": "Login Screen" })
+
     firebase.getRemoteConfig({
         developerMode: false, // play with this boolean to get more frequent updates during development
         cacheExpirationSeconds: 600, // 10 minutes, default is 12 hours.. set to a lower value during dev
