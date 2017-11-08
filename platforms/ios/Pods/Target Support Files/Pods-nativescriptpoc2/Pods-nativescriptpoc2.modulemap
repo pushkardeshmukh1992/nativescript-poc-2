@@ -1,0 +1,6 @@
+framework module Pods_nativescriptpoc2 {
+  umbrella header "Pods-nativescriptpoc2-umbrella.h"
+
+  export *
+  module * { export * }
+}
